@@ -32,7 +32,7 @@ main (int argc,char *argv[])
 	
 	if(argc != 3)
 		{
-		printf("argc %d; syntax init_sacCer2_32 chrNo chrLen\n",argc);
+		printf("argc %d; init_hsG32 chrNo chrLen\n",argc);
 		exit(0);
 		}
 
