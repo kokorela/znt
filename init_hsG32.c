@@ -1,6 +1,5 @@
-/* variant of init_hsG16 designed to fread/fwrite binary znt4 4 byte files */
-
-/* program to initialize binary sacCer2 chromosome files to zeros */
+/* variant of init_hsG16 designed to fread/fwrite binary 4 byte files */
+/* program to initialize binary hs chromosome files to zeros */
 
 #include <stdio.h>
 #include <stdlib.h>
