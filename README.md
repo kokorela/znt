@@ -1,12 +1,11 @@
 znt:  
 
 =======================================================================================================
-The Zero-Initialized Template (znt) is a container format for each chromosome and a wrapper capable to combine multiple streams of data from disparate sources into a coherent record. (machine readable wrapper format for information exchange capable to combine multiple streams of data from disparate sources into a coherent record)
+The Zero-Initialized Template (znt) is a container format for each chromosome and a wrapper capable to combine multiple streams of data from disparate sources into a coherent record. (machine readable wrapper format for genome annotation and information exchange protocol standard. These files provided a good template for writing sequence reads, for example. 
 
-These files provided a good template for writing sequence reads, for example. 
 
  
-The file specification is below:
+Algorithm 
 =======================================================================================================
 The first step is to create a large array file per chromosome and initialize to zero. 
 
@@ -16,18 +15,17 @@ Step 2:  For (n = 0; n < chrLen; n++) {
                     fwrite(&nVal                    /* file pointer pointing to address in memory */ 
                     sizeof(X)-see below ,1,fp);     /* reserve a chunk of memory with size (X) initialize to zero */
                    
- }                    ** where: X= char, short int, long int
+              }
+              
+ ** where: X= char, short int, long int
 
 
-
-
-
-
+Format Specifications Summary Table: 
 Name  	    Type    	      Size	              Range
 ----------------------------------------------------------------------
 znt	        char          	1 (8-bit) byte	    0 to 255              |   /*char type */  
-znt2	      int	            2 (16-bit) byte   	0 to 65,535           |   /*short int */  
-znt4	      long int      	4 (32-bit) bytes	  0 to 4,294,967,295    |   /*full int */   
+znt2	       int	           2 (16-bit) byte   	0 to 65,535           |   /*short int */  
+znt4	       long int      	4 (32-bit) bytes	  0 to 4,294,967,295    |   /*full int */   
 
 
 
